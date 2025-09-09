@@ -1,0 +1,7 @@
+<h2>Borrar Región</h2>
+<p>¿Estás seguro que deseas borrar la región "{{ region.nombre }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Sí, borrar</button>
+    <a href="{% url 'listar_regiones' %}">Cancelar</a>
+</form>
